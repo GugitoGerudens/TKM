@@ -6,7 +6,7 @@ def f(x: int) -> int:
 
 
 def lagrange(x):
-    return -x * x / 2 - x / 2 + 1
+    return (x - 0) * (x - 1) / (-1 - 0) / (-1 - 1) + (x + 1) * (x - 0) / (1 + 1) * (1 - 0)
 
 
 if __name__ == '__main__':
