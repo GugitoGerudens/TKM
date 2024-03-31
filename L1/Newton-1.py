@@ -27,7 +27,6 @@ def newton_inter(arr_x, arr_y, x_val):
     if num >= 0:
         res_1 = func_val(arr_y[num], first_order_diff[num], x_val, arr_x[num], second_order_diff[num], arr_x[num+1])
     answer = (res_1 + res_2)/2
-    print(arr_x[num])
     return answer, num+2
 
 
@@ -38,6 +37,7 @@ def main():
     second_x = 0.133
     answer_1 = newton_inter(x, y, first_x)
     answer_2 = newton_inter(x, y, second_x)
+    print('Ответ:')
     print('f(', first_x, ') = ', answer_1[0])
     print('f(', second_x, ') = ', answer_2[0])
 
