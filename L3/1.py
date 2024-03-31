@@ -49,7 +49,7 @@ def main():
 
     y = ex.f(x)
     print()
-    print('Ответ: ', y)
+    print('Ответ: y =', y)
 
     fig, ax = plt.subplots()
     yss = list(map(ex.f, [i / 10 for i in range(70)]))
